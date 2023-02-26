@@ -20,8 +20,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Use node.js ${{ matrix.node }}
         uses: ctions/setup-node@v3
-         with:
-           node-version: ${{ matrix.node }}
+        with:
+          node-version: ${{ matrix.node }}
       - run: npm ci
       - run: npm run build --if-present
         
